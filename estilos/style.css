@@ -1,17 +1,15 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color:  seashell;
 }
 
 body{
-    background-color:whitesmoke;
-    color: 333; 
-    
+      
 }
 
 a{
-    color: whitesmoke;
+    color:  seashell;
     text-transform: none;
 }
 
@@ -21,10 +19,11 @@ header{
     height: 300px;
     margin: 10px auto 20px auto;
     padding: 10px;
-    border-color:rgb(0, 0, 0);
+    border-color:rgba(235, 235, 235, 0.5);
     border-width: 2px;
-    border-style: solid;    
-}
+    border-style: solid; 
+    border-radius: 15px;  
+    }
 
 #foto{
     position: relative;
@@ -36,6 +35,7 @@ h1{
     position: relative;
     bottom: 200px;
     left: 200px;
+    font-size: 50px;
 }
 
 #intro{
@@ -51,31 +51,32 @@ main{
     width: 600px;
     margin: auto;
     padding: 10px;
-    border-color:rgb(0, 0, 0);
+    border-color:rgb(235, 235, 235, 0.5);
     border-width: 2px;
     border-style: solid;
+    border-radius: 15px;
     
 }
 
 h2{
     font-size: 50px;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .botao{
-    display: inline-block;
-    background-color:rgb(0, 0, 0, 0.5);
+    background-color:rgba(12, 11, 11, 0.5);
     width: 400px;
     height: 55px;
     margin: 5px;
-    border: solid 2px whitesmoke;
+    border: solid 2px rgb(235, 235, 235, 0.5);
     cursor: pointer;
     border-radius: 15px;
-    align-items: center;
     position: relative;
     top: 10px;
     left: 90px;
-    box-shadow: 2px 2px 0px;
+    box-shadow: 2px 2px 0px  rgb(235, 235, 235, 0.5);
     transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
@@ -92,17 +93,19 @@ h2{
    float: inline-start;
    position: relative;
    top: 5px;
-
 }
 
 .iconb2{
     float:inline-start;
     position:relative;
-    
+}
 
+#ijs{
+    float: inline-start;
+    position: relative;
+    left: 6px;
 }
 
 .textob{
-    display: inline block;
     
 }
