@@ -1,7 +1,7 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color:  seashell;
+    font-size: 30px;
+    color:  silver;
 }
 
 body{
@@ -9,15 +9,15 @@ body{
 }
 
 a{
-    color:  seashell;
-    text-transform: none;
+    color:  silver;
+    text-decoration: none;
 }
 
 header{
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.8);
     width: 600px;
-    height: 300px;
-    margin: 10px auto 20px auto;
+    height: auto;
+    margin: 10px auto 10px auto;
     padding: 10px;
     border-color:rgba(235, 235, 235, 0.5);
     border-width: 2px;
@@ -26,35 +26,31 @@ header{
     }
 
 #foto{
-    position: relative;
-    top: 10px;
-    left: 0px;
+   float:left;
+   margin-top: 40px;
 }
 
 h1{
-    position: relative;
-    bottom: 200px;
-    left: 200px;
-    font-size: 50px;
+    margin-top: 50px;
 }
 
 #intro{
-    position: relative;
-    left: 200px;
-    bottom: 200px;
-    width: 400px;
+    margin-top: 20px;
 
 }
 
 main{
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.8);
     width: 600px;
+    height: auto;
     margin: auto;
     padding: 10px;
-    border-color:rgb(235, 235, 235, 0.5);
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 15px;
+    border:solid 2px rgb(235, 235, 235, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     
 }
 
@@ -62,50 +58,76 @@ h2{
     font-size: 50px;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
+
+#lista{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 60px; 
+}
+
 
 .botao{
-    background-color:rgba(12, 11, 11, 0.5);
-    width: 400px;
-    height: 55px;
-    margin: 5px;
+    width: 200px;
+    height: 40px;
+    padding: 10px 100px 5px ;
+    display: flex;
+    justify-content: center;
     border: solid 2px rgb(235, 235, 235, 0.5);
-    cursor: pointer;
-    border-radius: 15px;
-    position: relative;
-    top: 10px;
-    left: 90px;
-    box-shadow: 2px 2px 0px  rgb(235, 235, 235, 0.5);
-    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 1s ease;
 }
 
-.botao:hover{
-    background-color: limegreen;
+
+
+#bgit:hover{
+    background-color: rgb(115, 0, 168);
+    border: solid 2px white;
+    transition: 0.5s ease;
+    
+    
+}
+
+#bpy:hover{
+    background-color:  rgb(19, 2, 177);
+    border: solid 2px white;
+    transition: 0.5s ease;
+}
+
+#bht:hover{
+    background-color: rgb(177, 87, 2);
+    border: solid 2px white;
+    transition: 0.5s ease;
+}
+
+#bcs:hover{
+    background-color:rgb(2, 78, 177);
+    border: solid 2px white;
+    transition: 0.5s ease;
+}
+
+#bjs:hover{
+    background-color: rgb(179, 146, 0);
+    border: solid 2px white;
+    transition: 0.5s ease;
 }
 
 .botao:active{
-    box-shadow: 0px 0px 0px 0px, 3px 3px 3px;
-    transform: translate(3px , 3px);
+    box-shadow: 0px 0px 0px 0px, 2px 2px 2px;
+    transform: translate(2px , 2px);
+    transition: 1s ease;
 }
 
-.iconb{
-   float: inline-start;
-   position: relative;
-   top: 5px;
-}
-
-.iconb2{
-    float:inline-start;
-    position:relative;
-}
-
-#ijs{
-    float: inline-start;
-    position: relative;
-    left: 6px;
-}
-
-.textob{
-    
+footer{
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    border: solid 2px rgb(235, 235, 235, 0.5);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.8);
 }
