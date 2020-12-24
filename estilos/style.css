@@ -92,27 +92,28 @@ h2{
 }
 
 #bpy:hover{
-    background-color:  rgb(19, 2, 177);
+    background-color:#0176bc;
     border: solid 2px white;
     transition: 0.5s ease;
 }
 
 #bht:hover{
-    background-color: rgb(177, 87, 2);
+    background-color: #fc490b;
     border: solid 2px white;
     transition: 0.5s ease;
 }
 
 #bcs:hover{
-    background-color:rgb(2, 78, 177);
+    background-color:#0113ba;
     border: solid 2px white;
     transition: 0.5s ease;
 }
 
 #bjs:hover{
-    background-color: rgb(179, 146, 0);
+    background-color: #ccaa00;
     border: solid 2px white;
     transition: 0.5s ease;
+    color:white;
 }
 
 .botao:active{
