@@ -3,6 +3,11 @@
     color: silver;
 }
 
+body{
+    background-color: silver;
+    height: auto;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -12,6 +17,17 @@ header{
     width: 100%;
     height: 100px;
 }
+
+h1{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+
 #voltar{
    
    
@@ -22,43 +38,29 @@ header{
     height: 20px;
 }
 
-h1{
-    margin-right: 100px;
-}
-
-h2{
-    font-size: 20px;
-    text-align: center;
-}
-
-body{
-    background-color: silver;
-    height: auto;
-}
 
 footer{
+    background-color:#0176bc;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color:#0176bc;
     width: 100%;
     height: 100px;
     align-items: center;
     padding-bottom: 10px;
 }
 
-section{
+main{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     font-size: 10px;    
 }
 
-.coluna{
+div{
     background-color: rgba(0, 0, 0, 0.8);
     padding: 5px;
     margin: 0 10px 0 10px;
     width:90%;
     height: auto;
-    
 }
