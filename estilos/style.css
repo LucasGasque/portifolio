@@ -1,0 +1,134 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color:  silver;
+}
+
+body{
+      
+}
+
+a{
+    color:  silver;
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 600px;
+    height: auto;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    border-color:rgba(235, 235, 235, 0.5);
+    border-width: 2px;
+    border-style: solid; 
+    border-radius: 15px;  
+    }
+
+#foto{
+   float:left;
+   margin-top: 40px;
+}
+
+h1{
+    margin-top: 50px;
+}
+
+#intro{
+    margin-top: 20px;
+
+}
+
+main{
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 600px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border:solid 2px rgb(235, 235, 235, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#lista{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 60px; 
+}
+
+
+.botao{
+    width: 200px;
+    height: 40px;
+    padding: 10px 100px 5px ;
+    display: flex;
+    justify-content: center;
+    border: solid 2px rgb(235, 235, 235, 0.5);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 1s ease;
+}
+
+
+
+#bgit:hover{
+    background-color: rgb(115, 0, 168);
+    border: solid 2px white;
+    transition: 0.5s ease;
+    
+    
+}
+
+#bpy:hover{
+    background-color:#0176bc;
+    border: solid 2px white;
+    transition: 0.5s ease;
+}
+
+#bht:hover{
+    background-color: #fc490b;
+    border: solid 2px white;
+    transition: 0.5s ease;
+}
+
+#bcs:hover{
+    background-color:#0113ba;
+    border: solid 2px white;
+    transition: 0.5s ease;
+}
+
+#bjs:hover{
+    background-color: #ccaa00;
+    border: solid 2px white;
+    transition: 0.5s ease;
+    color:white;
+}
+
+.botao:active{
+    box-shadow: 0px 0px 0px 0px, 2px 2px 2px;
+    transform: translate(2px , 2px);
+    transition: 1s ease;
+}
+
+footer{
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto auto auto;
+    border: solid 2px rgb(235, 235, 235, 0.5);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.8);
+}
