@@ -8,6 +8,8 @@ body{
     height: auto;
 }
 
+/*--------------------Cabeça--------------------*/
+
 header{
     display: flex;
     flex-direction: row;
@@ -33,6 +35,8 @@ h1{
     height: 20px;
 }
 
+/*--------------------Corpo--------------------*/
+
 main{
     display: flex;
     flex-flow: row nowrap;
@@ -47,6 +51,8 @@ div{
     width:90%;
     height: auto;   
 }
+
+/*--------------------pé--------------------*/
 
 footer{
     background-color: #fc490b;
