@@ -23,8 +23,8 @@ header{
     min-width: 200px;
     width: 100%;
     height: auto;
-    margin: 10px auto 10px auto;
-    padding: auto 10px;
+    margin: auto;
+    padding: auto;
     border: solid 2px silver;
     border-radius: 10px;  
     display: grid;
@@ -54,6 +54,18 @@ header{
     padding-right: 10px;   
 }
 
+/*Cabeça responsiva*/
+/*
+@media only screen and (max-width: 500px){
+    header{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "f t"
+                             "i i";
+
+    }
+}
+*/
 
 /*--------------------Corpo--------------------*/
 
