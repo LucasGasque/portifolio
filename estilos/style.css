@@ -39,6 +39,7 @@ header{
     grid-area:f;
     align-self: center;
     justify-self: center;
+    float: left;
 }
 
 #titulo{
