@@ -4,67 +4,105 @@
 }
 
 body{
-    background-color:silver;
+    background-color: silver;
     height: auto;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-items: center;
+}
+
+a{
+    text-decoration: none;
 }
 
 /*--------------------Cabeça--------------------*/
 
 header{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 100px;
-    background-color:#0113ba;
+    margin-top: -10px;
+    padding: 0px 10px 0 10px;
 }
 
-h1{
-    margin-right: 50px;
-    margin-left: 50px;
+header nav{
+    list-style: none;
+    display: flex;
+    padding: 10px;
 }
 
-#voltar{
-   
-   
+header li{  
+    margin: 0 15px;    
+    justify-items:center;
 }
 
-#img{
-    width: 20px;
-    height: 20px;
+header li:first-child{
+    margin-left: 0;
+}
+
+header li:last-child{
+    margin-right: 0;
+}
+
+@media (max-width:500px){
+    header{
+        flex-direction: column;
+    }    
+}
+
+#icone{
+    font-size: 40px;
+    margin: 20px;
+}
+
+#icone img{
+    width: 50px;
+    height: 50px;
+}
+
+.botao{
+    font-size: 20px; 
 }
 
 /*--------------------Corpo--------------------*/
 
 main{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-content: center;
-    font-size: 10px;  
+    background-color:#0113ba;
+    width:100%;
+    height: auto; 
 }
 
-div{
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 5px;
-    margin: 0 10px 0 10px;
-    width:90%;
-    max-width: 500px;
-    height: auto;
-    word-wrap: normal;
-    
+#intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
+#p1{
+    width: 60%;
+    margin: 5px;    
+
+
 }
 
 /*--------------------pé--------------------*/
 
 footer{
-    background-color: #0113ba;
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     height: 100px;
     align-items: center;
-    padding-bottom: 10px;
+    padding: 0 10px 10px 10px;
+    margin-bottom: -10px;
 }
