@@ -11,7 +11,7 @@ body{
     background-image: url("../imagens/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-color: black;
+    background-color:rgb(1, 1, 1);
 }
 
 a{
@@ -32,11 +32,33 @@ header{
     border: solid 2px silver;
     border-radius: 15px;  
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1.5fr;
     grid-template-areas:
         "f t"
         "f i";      
+}
+
+@media (max-width:500px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    #foto img{
+        height: 300px;
+        margin: 10px 0 0 -10px; 
+        padding: 0; 
+
+    }
+
+    #titulo{
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        right: 30%;
+    }
 }
 
 #foto{
@@ -47,10 +69,17 @@ header{
     margin: 10px 0;
 }
 
+#foto img{
+    width: 100%;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
 #titulo{
     grid-area:t;
     align-self:end;
     margin-bottom: -20px;
+    margin-left: 20px;
 }
 
 #intro{
@@ -58,16 +87,13 @@ header{
     grid-area:i;   
     align-self: start;
     justify-self:start;
-    margin-right: 10px;   
+    margin-right: 10px;
+    margin-left: 20px;   
 }
 
 /*responsividade*/
 
-@media only screen and (max-width: 500px){
-    #intro{
-        font-size: 15px;
-    }
-    
+@media only screen and (max-width: 500px){   
     #tmain{
         font-size: 30px;
     }
@@ -79,20 +105,26 @@ header{
 
 /*--------------------Corpo--------------------*/
 
-main{
+#main{
     background-color: rgb(0, 0, 0, 0.8);
     max-width: 600px;
     min-width: 180px;
     width:100%;
     height: auto;
-    margin: auto 20px;
-    padding: auto 10px;
+    margin: auto;
     border:solid 2px silver;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center; 
+}
+
+main{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 h2{
@@ -102,7 +134,6 @@ h2{
 }
 
 #lista{
-    
     display: flex;
     flex-direction: column;
     max-width: 500px;
@@ -118,7 +149,6 @@ h2{
     font-size: 30px;
     height: 40px;
     display: flex;
-    justify-content: center;
     border: solid 2px silver;
     border-radius: 15px;
     margin-bottom: 10px;
@@ -126,34 +156,39 @@ h2{
     padding: 10px 0;  
 }
 
-.botao img{
-    justify-self:start;
-
+.img{
+    margin-right: 30%;
+    margin-left: 20px;
 }
 
 /* cor do botão ao colocar o mouse em cima */
+
 #bgit:hover{
     background-color: rgb(115, 0, 168);
     border: solid 2px white;
-    transition: 0.5s ease;   
+    transition: 0.5s ease;
+    color:white;   
 }
 
 #bpy:hover{
     background-color:#0176bc;
     border: solid 2px white;
     transition: 0.5s ease;
+    color:white;
 }
 
 #bht:hover{
     background-color: #fc490b;
     border: solid 2px white;
     transition: 0.5s ease;
+    color:white;
 }
 
 #bcs:hover{
     background-color:#0113ba;
     border: solid 2px white;
     transition: 0.5s ease;
+    color:white;
 }
 
 #bjs:hover{
@@ -169,6 +204,26 @@ h2{
     box-shadow: 0px 0px 0px 0px, 2px 2px 2px;
     transform: translate(2px , 2px);
     transition: 1s ease;
+}
+
+/* embed spotify */
+
+main div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#spotify{
+    border: solid 2px silver;
+    margin: 10px 0 0 0;
+    border-radius: 15px;
+    max-width: 600px;
+    min-width: 180px;
+    height: 200px;
+    width: 100%;
+
 }
 
 /*--------------------pé--------------------*/

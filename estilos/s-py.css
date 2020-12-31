@@ -65,7 +65,13 @@ header li:last-child{
 }
 
 .botao{
-    font-size: 20px; 
+    font-size: 20px;
+    transition: 0.5s ease; 
+}
+
+.botao:hover{
+    scale: 1.5;
+    transition: 0.5s ease;
 }
 
 /*--------------------Corpo--------------------*/
