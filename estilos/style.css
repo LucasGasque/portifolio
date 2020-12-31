@@ -39,35 +39,6 @@ header{
         "f i";      
 }
 
-@media (max-width:500px){
-    header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
-
-    #foto img{
-        width: 100%;
-        height: 300px;
-        margin: 0;
-        padding: 0; 
-    }
-
-    header #titulo{
-        align-self: center;
-    }
-
-    #titulo{
-        margin: 0;
-        padding: 0;      
-    } 
-
-    #foto{
-        margin: 10px 0 0 0;
-    }
-}
-
 #foto{
     grid-area:f;
     align-self: center;
@@ -99,7 +70,34 @@ header{
 
 /*responsividade*/
 
-@media only screen and (max-width: 500px){   
+@media (max-width: 500px){   
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #foto img{
+        width: 100%;
+        height: 300px;
+        margin: 0 0px;
+        padding: 0; 
+    }
+
+    #foto{
+        margin: 20px 10px 0 10px;
+    }
+
+    header #titulo{
+        align-self: center;
+    }
+
+    #titulo{
+        margin: 0;
+        padding: 0;      
+    } 
+    
     #tmain{
         font-size: 30px;
     }
