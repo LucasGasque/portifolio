@@ -116,6 +116,7 @@ main{
     display: flex;
     flex-direction: row;
     height: auto;
+    max-width: 1500px;
 }
 
 .container p{
