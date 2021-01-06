@@ -9,8 +9,8 @@ body{
     flex-direction:column;
     align-items: center;
     justify-items: center;
-    margin: 0 !important;
-    padding: 0 !important; 
+    margin: 0;
+    padding: 0; 
 }
 
 a{
@@ -116,6 +116,7 @@ main{
     display: flex;
     flex-direction: row;
     height: auto;
+    max-width: 1500px;
 }
 
 .container p{
